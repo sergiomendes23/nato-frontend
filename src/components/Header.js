@@ -1,21 +1,24 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export default function Header() {
 	return (
 		<Menu>
-			<h1>NATÖ</h1>
-			<p>HOME</p>
-			<p>BIOGRAFIA</p>
-			<p>ALBUNS</p>
-			<p>CARREIRA</p>
-			<p>AGENDA</p>
-			<p>LOJA</p>
-			<h6>CONTATO</h6>
+			<Nato>
+            <Link to="/" style={{textDecoration: 'none'}}><h1>NATÖ</h1></Link>
+			</Nato>
+			<Options>
+				<Link to="/" style={{textDecoration: 'none'}}><p>HOME</p></Link>
+				<Link to="/" style={{textDecoration: 'none'}}><p>BIOGRAFIA</p></Link>
+				<Link to="/" style={{textDecoration: 'none'}}><p>ALBUNS</p></Link>
+				<Link to="/" style={{textDecoration: 'none'}}><p>CARREIRA</p></Link>
+				<Link to="/" style={{textDecoration: 'none'}}><p>AGENDA</p></Link>
+				<Link to="/" style={{textDecoration: 'none'}}><p>LOJA</p></Link>
+				<Link to="/" style={{textDecoration: 'none'}}><h6>CONTATO</h6></Link>
+			</Options>
 			<Account>
-				<Icon>
-					<ion-icon name="headset-outline"></ion-icon>
-					<ion-icon name="cart-outline"></ion-icon>
-				</Icon>
+				<ion-icon name="headset-outline"></ion-icon>
+				<ion-icon name="cart-outline"></ion-icon>
 			</Account>
 		</Menu>
 	);
@@ -27,14 +30,22 @@ const Menu = styled.div`
 	background-color: #a65746;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
+	box-sizing: border-box;
+	padding: 10px;
+`;
+
+const Nato = styled.div`
 	h1 {
 		font-family: "Bebas Neue";
 		font-size: 35px;
 		color: #f3ebe0;
 		font-weight: 400;
-		margin-right: 25px;
-		margin-left: 10px;
 	}
+`;
+const Options = styled.div`
+	display: flex;
+	align-items: center;
 	p {
 		width: 150px;
 		height: 35px;
@@ -45,6 +56,11 @@ const Menu = styled.div`
 		font-size: 15px;
 		color: #f3ebe0;
 		border-right: 1px solid #f3ebe0;
+		&:hover {
+			cursor: pointer;
+			background-color: #f3ebe0;
+			color: #a65746;
+		}
 	}
 	h6 {
 		width: 150px;
@@ -56,18 +72,23 @@ const Menu = styled.div`
 		font-size: 15px;
 		font-weight: 400;
 		color: #f3ebe0;
+		&:hover {
+			cursor: pointer;
+			background-color: #f3ebe0;
+			color: #a65746;
+		}
 	}
 `;
 
 const Account = styled.div`
-	width: 150px;
+	width: 80px;
 	height: 35px;
-	background-color: skyblue;
-    ion-icon {}
-`;
-
-const Icon = styled.div`
-	width: 25px;
-	height: 25px;
-	color: #f3ebe0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	ion-icon {
+		width: 30px;
+		height: 30px;
+		color: #f3ebe0;
+	}
 `;
