@@ -14,7 +14,7 @@ export default function Header() {
 				<Link to="/carreira" style={{textDecoration: 'none'}}><p>CARREIRA</p></Link>
 				<Link to="/agenda" style={{textDecoration: 'none'}}><p>AGENDA</p></Link>
 				<Link to="/loja" style={{textDecoration: 'none'}}><p>LOJA</p></Link>
-				<Link to="/contato" style={{textDecoration: 'none'}}><h6>CONTATO</h6></Link>
+				<Link to="/contato" style={{textDecoration: 'none'}}><h2>CONTATO</h2></Link>
 			</Options>
 			<Account>
 				<ion-icon name="headset-outline"></ion-icon>
@@ -62,7 +62,7 @@ const Options = styled.div`
 			color: #a65746;
 		}
 	}
-	h6 {
+	h2 {
 		width: 150px;
 		height: 35px;
 		display: flex;
