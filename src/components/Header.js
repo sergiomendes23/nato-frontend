@@ -9,12 +9,12 @@ export default function Header() {
 			</Nato>
 			<Options>
 				<Link to="/" style={{textDecoration: 'none'}}><p>HOME</p></Link>
-				<Link to="/" style={{textDecoration: 'none'}}><p>BIOGRAFIA</p></Link>
-				<Link to="/" style={{textDecoration: 'none'}}><p>ALBUNS</p></Link>
-				<Link to="/" style={{textDecoration: 'none'}}><p>CARREIRA</p></Link>
-				<Link to="/" style={{textDecoration: 'none'}}><p>AGENDA</p></Link>
-				<Link to="/" style={{textDecoration: 'none'}}><p>LOJA</p></Link>
-				<Link to="/" style={{textDecoration: 'none'}}><h6>CONTATO</h6></Link>
+				<Link to="/biografia" style={{textDecoration: 'none'}}><p>BIOGRAFIA</p></Link>
+				<Link to="/albuns" style={{textDecoration: 'none'}}><p>ALBUNS</p></Link>
+				<Link to="/carreira" style={{textDecoration: 'none'}}><p>CARREIRA</p></Link>
+				<Link to="/agenda" style={{textDecoration: 'none'}}><p>AGENDA</p></Link>
+				<Link to="/loja" style={{textDecoration: 'none'}}><p>LOJA</p></Link>
+				<Link to="/contato" style={{textDecoration: 'none'}}><h6>CONTATO</h6></Link>
 			</Options>
 			<Account>
 				<ion-icon name="headset-outline"></ion-icon>
