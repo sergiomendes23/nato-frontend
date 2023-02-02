@@ -24,7 +24,12 @@ export default function Header() {
 	);
 }
 
+
+
 const Menu = styled.div`
+	@media screen and (max-width: 480px) {
+		
+	}
 	width: 100vw;
 	height: 50px;
 	background-color: #a65746;
@@ -33,6 +38,9 @@ const Menu = styled.div`
 	justify-content: space-between;
 	box-sizing: border-box;
 	padding: 10px;
+	position: fixed;
+    top: 0;
+    left: 0;
 `;
 
 const Nato = styled.div`
