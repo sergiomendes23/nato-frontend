@@ -9,7 +9,9 @@ export default function Sidebar({ active }) {
 
 	return (
 		<Container sidebar={active}>
-			<FaIcons.FaTimes onClick={closeSidebar} />
+			<Close>
+				<FaIcons.FaTimes onClick={closeSidebar} />
+			</Close>
 			<Content>
 				<Link to="/" style={{ textDecoration: "none" }}>
 					<p>HOME</p>
@@ -39,26 +41,13 @@ export default function Sidebar({ active }) {
 
 const Container = styled.div`
 	width: 150px;
-	height: 300px;
+	height: 295px;
 	background-color: #a65746;
 	position: fixed;
 	top: 0;
 	left: 0;
 	left: ${(props) => (props.sidebar ? "0" : "100%")};
 	animation: showSidebar 0.4s;
-
-	svg {
-		width: 46px;
-		height: 46px;
-		color: #f3ebe0;
-		box-sizing: border-box;
-		padding: 10px;
-        &:hover {
-			cursor: pointer;
-			color: #eddbc1;
-		}
-	}
-
 
 	@keyframes showSidebar {
 		from {
@@ -70,7 +59,22 @@ const Container = styled.div`
 			width: 150px;
 		}
 	}
-    
+`;
+
+const Close = styled.div`
+	width: 150px;
+	height: 50px;
+	svg {
+		width: 46px;
+		height: 46px;
+		color: #f3ebe0;
+		box-sizing: border-box;
+		padding: 10px;
+		&:hover {
+			cursor: pointer;
+			color: #eddbc1;
+		}
+	}
 `;
 
 const Content = styled.ul`

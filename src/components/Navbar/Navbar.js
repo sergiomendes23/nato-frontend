@@ -6,6 +6,7 @@ import * as BsIcons from "react-icons/bs";
 import Sidebar from "../Sidebar/Sidebar";
 
 export default function Navbar() {
+	
 	const [sidebar, setSidebar] = useState(false);
 	const showSidebar = () => setSidebar(!sidebar);
 
