@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import * as BsIcons from "react-icons/bs";
 
 export default function Footer() {
 	return (
@@ -10,12 +10,12 @@ export default function Footer() {
 			<Midias>
 				<MidiaIcon>
 					<a href="https://www.instagram.com/natocomtrema/" target="_blank">
-						<ion-icon name="logo-instagram"></ion-icon>
+						<BsIcons.BsInstagram />
 					</a>
 				</MidiaIcon>
 				<MidiaIcon>
 					<a href="https://twitter.com/natocomtrema" target="_blank">
-						<ion-icon name="logo-twitter"></ion-icon>
+						<BsIcons.BsTwitter />
 					</a>
 				</MidiaIcon>
 				<MidiaIcon>
@@ -23,12 +23,12 @@ export default function Footer() {
 						href="https://open.spotify.com/artist/5tcibVee711ANTnnmW4gr6"
 						target="_blank"
 					>
-						<ion-icon name="stats-chart-outline"></ion-icon>
+						<BsIcons.BsSpotify />
 					</a>
 				</MidiaIcon>
 				<MidiaIcon>
 					<a href="https://www.youtube.com/@NATOcomtrema" target="_blank">
-						<ion-icon name="logo-youtube"></ion-icon>
+						<BsIcons.BsYoutube />
 					</a>
 				</MidiaIcon>
 			</Midias>
@@ -63,15 +63,13 @@ const Midias = styled.div`
 
 const MidiaIcon = styled.div`
 	margin-left: 15px;
-	ion-icon {
+	svg {
 		width: 25px;
 		height: 25px;
 		color: #f3ebe0;
-	}
-	&:hover {
-		cursor: pointer;
-		ion-icon {
-			color: #ecde82;
+		&:hover {
+			cursor: pointer;
+			color: #eddbc1;
 		}
 	}
 `;

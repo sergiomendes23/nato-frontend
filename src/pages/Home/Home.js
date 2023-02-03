@@ -1,8 +1,7 @@
 import styled from "styled-components";
 import home from "../../assets/images/home.png";
-import Footer from "../../components/Footer";
-import Navbar from "../../components/Navbar";
-import Sidebar from "../../components/Sidebar";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 
 export default function Home() {
 	return (

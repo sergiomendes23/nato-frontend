@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import Header from "../../components/Navbar";
-import Footer from "../../components/Footer";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 
 export default function Biografy() {
 	return (
 		<Container>
-			<Header />
+			<Navbar />
 			<>
 				<div>Biografia</div>
 			</>

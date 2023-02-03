@@ -1,13 +1,15 @@
 import styled from "styled-components";
-import Header from "../../components/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 
 export default function Schedule() {
 	return (
 		<Container>
-			<Header />
+			<Navbar />
 			<>
 				<div>Agenda</div>
 			</>
+			<Footer />
 		</Container>
 	);
 }
