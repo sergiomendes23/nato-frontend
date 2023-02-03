@@ -30,7 +30,6 @@ const Background = styled.div`
 	@media screen and (max-width: 720px) {
 		width: 100vw;
 		height: 300px;
-		background-color: blue;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -59,7 +58,7 @@ const BgImg = styled.div`
 
 	@media screen and (min-width: 721px) {
 		img {
-			width: 300px;
+			width: 600px;
 			position: fixed;
 			bottom: 0;
 			left: 0;
@@ -69,16 +68,7 @@ const BgImg = styled.div`
 
 const Logo = styled.div`
 	@media screen and (max-width: 720px) {
-		h1 {
-			background-color: red;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			font-family: "Bebas Neue";
-			font-weight: 400;
-			font-size: 100px;
-			color: #a65746;
-		}
+		display: none;
 	}
 
 	@media screen and (min-width: 721px) {
