@@ -37,11 +37,19 @@ const Background = styled.div`
 `;
 
 const BgImg = styled.div`
-	img {
-		width: 450px;
-		position: fixed;
-		bottom: 0;
-		left: 0;
+	@media screen and (max-width: 720px) {
+		img {
+			display: none;
+		}
+	}
+
+	@media screen and (min-width: 721px) {
+		img {
+			width: 40%;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+		}
 	}
 `;
 

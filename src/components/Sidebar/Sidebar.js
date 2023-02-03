@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FaTimes } from "react-icons/fa";
+import * as FaIcons from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default function Sidebar({ active }) {
@@ -9,7 +9,7 @@ export default function Sidebar({ active }) {
 
 	return (
 		<Container sidebar={active}>
-			<FaTimes onClick={closeSidebar} />
+			<FaIcons.FaTimes onClick={closeSidebar} />
 			<Content>
 				<Link to="/" style={{ textDecoration: "none" }}>
 					<p>HOME</p>
@@ -39,7 +39,7 @@ export default function Sidebar({ active }) {
 
 const Container = styled.div`
 	width: 150px;
-	height: 100%;
+	height: 300px;
 	background-color: #a65746;
 	position: fixed;
 	top: 0;
@@ -48,8 +48,8 @@ const Container = styled.div`
 	animation: showSidebar 0.4s;
 
 	svg {
-		width: 40px;
-		height: 40px;
+		width: 46px;
+		height: 46px;
 		color: #f3ebe0;
 		box-sizing: border-box;
 		padding: 10px;
