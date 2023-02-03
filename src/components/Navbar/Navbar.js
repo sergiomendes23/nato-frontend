@@ -6,7 +6,7 @@ import * as BsIcons from "react-icons/bs";
 import Sidebar from "../Sidebar/Sidebar";
 
 export default function Navbar() {
-	
+
 	const [sidebar, setSidebar] = useState(false);
 	const showSidebar = () => setSidebar(!sidebar);
 
@@ -49,6 +49,7 @@ const Menu = styled.div`
 `;
 
 const SidebarOptions = styled(Link)`
+	width: 60px;
 	svg {
 		width: 25px;
 		height: 25px;
@@ -68,7 +69,7 @@ const Nato = styled.div`
 `;
 
 const Account = styled.div`
-	width: 80px;
+	width: 60px;
 	height: 35px;
 	display: flex;
 	align-items: center;

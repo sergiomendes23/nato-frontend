@@ -9,9 +9,7 @@ export default function Sidebar({ active }) {
 
 	return (
 		<Container sidebar={active}>
-			<Close>
-				<FaIcons.FaTimes onClick={closeSidebar} />
-			</Close>
+			<Close onClick={closeSidebar}></Close>
 			<Content>
 				<Link to="/" style={{ textDecoration: "none" }}>
 					<p>HOME</p>
@@ -40,8 +38,9 @@ export default function Sidebar({ active }) {
 }
 
 const Container = styled.div`
+	margin-top: 50px;
 	width: 150px;
-	height: 295px;
+	height: 246px;
 	background-color: #a65746;
 	position: fixed;
 	top: 0;
@@ -63,7 +62,7 @@ const Container = styled.div`
 
 const Close = styled.div`
 	width: 150px;
-	height: 50px;
+	color: transparent;
 	svg {
 		width: 46px;
 		height: 46px;

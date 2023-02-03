@@ -68,13 +68,7 @@ const BgImg = styled.div`
 
 const Logo = styled.div`
 	@media screen and (max-width: 720px) {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		font-family: "Bebas Neue";
-		font-weight: 400;
-		font-size: 100px;
-		color: #a65746;
+		display: none;
 	}
 
 	@media screen and (min-width: 721px) {
