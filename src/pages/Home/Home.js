@@ -1,14 +1,20 @@
 import styled from "styled-components";
 import home from "../../assets/images/home.png";
-import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import Navbar from "../../components/Navbar";
+import Sidebar from "../../components/Sidebar";
 
 export default function Home() {
 	return (
 		<Container>
-			<Header />
+			<Navbar />
 			<Background>
-				<img src={home} />
+				<BgImg>
+					<img src={home} />
+				</BgImg>
+				<Logo>
+					<h1>NATÖ</h1>
+				</Logo>
 			</Background>
 			<Footer />
 		</Container>
@@ -22,11 +28,34 @@ const Container = styled.div`
 `;
 
 const Background = styled.div`
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-sizing: border-box;
+	padding-right: 300px;
+`;
+
+const BgImg = styled.div`
 	img {
-		width: 100vw;
-		height: 100vh;
+		width: 450px;
 		position: fixed;
 		bottom: 0;
 		left: 0;
+	}
+`;
+
+const Logo = styled.div`
+	h1 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 500px;
+		height: 200px;
+		font-family: "Bebas Neue";
+		font-weight: 400;
+		font-size: 200px;
+		color: #a65746;
 	}
 `;

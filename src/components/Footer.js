@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
 	return (
@@ -22,7 +23,7 @@ export default function Footer() {
 						href="https://open.spotify.com/artist/5tcibVee711ANTnnmW4gr6"
 						target="_blank"
 					>
-						<ion-icon name="musical-notes-outline"></ion-icon>
+						<ion-icon name="stats-chart-outline"></ion-icon>
 					</a>
 				</MidiaIcon>
 				<MidiaIcon>
