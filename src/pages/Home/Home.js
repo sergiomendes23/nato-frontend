@@ -50,7 +50,7 @@ const Background = styled.div`
 const BgImg = styled.div`
 	@media screen and (max-width: 720px) {
 		img {
-			width: 400px;
+			width: 200px;
 			position: fixed;
 			bottom: 0;
 			left: 0;
