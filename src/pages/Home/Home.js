@@ -49,7 +49,7 @@ const Background = styled.div`
 const BgImg = styled.div`
 	@media screen and (max-width: 720px) {
 		img {
-			width: 200px;
+			width: 370px;
 			position: fixed;
 			bottom: 0;
 			left: 0;
@@ -58,7 +58,7 @@ const BgImg = styled.div`
 
 	@media screen and (min-width: 721px) {
 		img {
-			width: 600px;
+			width: 450px;
 			position: fixed;
 			bottom: 0;
 			left: 0;
@@ -68,7 +68,13 @@ const BgImg = styled.div`
 
 const Logo = styled.div`
 	@media screen and (max-width: 720px) {
-		display: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: "Bebas Neue";
+		font-weight: 400;
+		font-size: 100px;
+		color: #a65746;
 	}
 
 	@media screen and (min-width: 721px) {
